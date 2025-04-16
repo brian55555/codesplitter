@@ -12,4 +12,10 @@ export default defineConfig({
     // @ts-ignore
     allowedHosts: process.env.TEMPO === "true" ? true : undefined,
   },
+  base: "/", // Base path for production deployment
+  build: {
+    outDir: "dist", // Output directory for build files
+    emptyOutDir: true, // Clear the output directory before building
+    sourcemap: false, // Disable sourcemaps in production for smaller files
+  },
 });

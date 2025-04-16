@@ -11,6 +11,8 @@
     "react-router-dom": "^6.30.0"
   },
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
